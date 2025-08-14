@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formation Août – Anglais & Espagnol (من الصفر)</title>
+  <meta name="description" content="استمارة التسجيل في دورة تعلم اللغة الإنجليزية أو الإسبانية (أونلاين)." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0c0f14;--card:#121721;--ink:#eaf2ff;--muted:#a6b3c6;--accent:#39d98a;--accent-2:#77b7ff;--danger:#ff6b6b;--focus:#6ee7f9;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:
+      radial-gradient(1000px 700px at 90% 10%, rgba(119,183,255,.08), transparent 60%),
+      radial-gradient(1200px 800px at 10% 10%, rgba(57,217,138,.08), transparent 60%),
+      var(--bg);
+      color:var(--ink);font:500 16px/1.6 Tajawal, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial}
+    a{color:inherit}
+.intro{position:relative;overflow:hidden;border-radius:22px;padding:1.5rem;margin-bottom:1.5rem;
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);box-shadow:0 24px 60px rgba(0,0,0,.35)}
+    .intro h2{margin:0 0 .75rem;font-size:1.5rem;letter-spacing:.2px}
+    .lead{font-size:1.05rem;color:var(--muted);margin:.25rem 0 1rem}
+    .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem .75rem;border-radius:999px;background:color-mix(in srgb, var(--card) 78%, transparent);border:1px solid rgba(255,255,255,.12);font-weight:700}
+    .grid-info{display:grid;gap:12px;margin:1rem 0}
+    @media (min-width:720px){.grid-info{grid-template-columns:repeat(3,1fr)}}
+    .info{background:color-mix(in srgb, var(--card) 88%, transparent);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px}
+    .info h3{margin:.25rem 0 .5rem;font-size:1.05rem;color:var(--accent)}
+    .info p{margin:0;color:var(--ink)}
+    .muted{color:var(--muted)}
+    .schedule{display:grid;gap:10px;margin:10px 0}
+    @media (min-width:600px){.schedule{grid-template-columns:1fr 1fr}}
+    .slot{display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding:.75rem 1rem;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.10)}
+    .slot b{font-size:1.05rem}
+    .price{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin:1rem 0 0}
+    .price .tag{background:linear-gradient(135deg, var(--gold), #ff9f1c);color:#ff6b6b;font-weight:900;border-radius:14px;padding:.6rem .9rem}
+    .price .note{color:var(--muted)}
+    .divider{height:1px;background:linear-gradient(90deg, transparent, rgba(255,255,255,.15), transparent);margin:1rem 0}
+    .alert{display:flex;gap:.6rem;align-items:flex-start;background:rgba(255,107,107,.1);border:1px solid rgba(255,107,107,.35);border-radius:14px;padding:.75rem 1rem}
+
+    .shell{min-height:100%;display:grid;grid-template-rows:auto 1fr auto}
+    header{position:sticky;top:0;z-index:2;backdrop-filter:blur(10px) saturate(140%);
+      background:color-mix(in srgb, var(--bg) 85%, transparent);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{max-width:960px;margin:0 auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:inline-flex;align-items:center;gap:10px}
+    .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg, var(--accent), var(--accent-2));box-shadow:0 6px 22px rgba(57,217,138,.25), inset 0 0 0 2px rgba(255,255,255,.15)}
+    .brand span{font-weight:700}
+
+    .hero{max-width:960px;margin:28px auto;padding:0 18px}
+    .hero h1{margin:0 0 8px;font-size:clamp(22px,2.4vw + 12px,34px)}
+    .hero p{margin:0;color:var(--muted)}
+
+    .card{max-width:960px;margin:16px auto 40px;padding:0 18px}
+    .card-inner{border:1px solid rgba(255,255,255,.08);border-radius:18px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));box-shadow:0 12px 40px rgba(0,0,0,.25)}
+    .toolbar{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.06);background:color-mix(in srgb, var(--card) 82%, transparent)}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px dashed rgba(255,255,255,.18);color:var(--muted);font-size:13px}
+    .req-mark{font-size:.95em;color:var(--accent-2)}
+
+    form{padding:18px}
+    fieldset{margin:14px 0 6px;border:0;padding:0}
+    legend{font-weight:700;margin-bottom:8px}
+    .hint{color:var(--muted);font-size:.95rem;margin:-4px 0 10px}
+
+    .grid{display:grid;gap:14px}
+    .control{display:grid;gap:6px}
+    label{font-weight:600}
+    input[type="text"],input[type="email"],input[type="tel"],textarea,select{
+      width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);
+      background:color-mix(in srgb, var(--card) 90%, transparent);color:var(--ink)
+    }
+    textarea{min-height:120px;resize:vertical}
+    .options{display:grid;gap:8px;margin-top:2px}
+    .option{display:flex;align-items:flex-start;gap:10px}
+
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn{appearance:none;border:0;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#061119}
+    .btn-ghost{background:transparent;color:var(--ink);border:1px solid rgba(255,255,255,.14)}
+    .btn:focus{outline:2px solid var(--focus);outline-offset:2px}
+
+    .error{color:var(--danger);font-size:.95rem}
+    .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    .footer{color:var(--muted);text-align:center;padding:20px}
+
+    @media (min-width:720px){
+      .grid.two{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="nav" role="navigation" aria-label="رأس الصفحة">
+        <div class="brand" aria-label="العلامة">
+          <div class="logo" aria-hidden="true"></div>
+          <span>CHB • Form</span>
+        </div>
+      </div>
+    </header>
+<section class="intro" aria-labelledby="intro-title">
+    <h2 id="intro-title">هذه استمارة التسجيل</h2>
+    <p class="lead">هذه استمارة التسجيل في دورة تعلم اللغة الانجليزية أو الإسبانية.</p>
+    <div class="badges" role="list">
+      <span class="badge" role="listitem">✅ Online عبر <b>Google Meet</b></span>
+      <span class="badge" role="listitem">📱 هاتف أو 💻 حاسوب</span>
+      <span class="badge" role="listitem">⏱️ مدة كل دورة <b>20 ساعة</b></span>
+      <span class="badge" role="listitem">🗓️ بداية من <b>10 أوت</b></span>
+      <span class="badge" role="listitem">👥 أفواج محدودة العدد</span>
+    </div>
+    <div class="grid-info">
+      <div class="info"><h3>التوقيت</h3><div class="schedule"><div class="slot"><span class="muted">Groupe Espagnol</span> <b>19:00 – 20:30</b></div><div class="slot"><span class="muted">Groupe Anglais</span> <b>21:00 – 22:30</b></div></div></div>
+      <div class="info"><h3>جودة التعلّم</h3><p>نظرًا لكثرة المشاركين، ستكون الأفواج <b>محدودة العدد</b> للحفاظ على حسن سير الدورة وتسهيل الاستيعاب.</p></div>
+      <div class="info"><h3>المحتوى</h3><p>ستدرسون أساسيات اللغة المختارة من الصفر: نطق الحروف، مفردات الحياة اليومية، تكوين الجمل، التعريف بالنفس، التعبير عن المشاعر، طرح الأسئلة والإجابة، قراءة نصوص بسيطة، والنطق الصحيح.</p></div>
+    </div>
+    <div class="price" aria-label="السعر"><span class="tag">💰 السعر: 8500 دج / دورة</span><span class="note">التسجيل <b>مسبق فقط</b> – سيتم الاتصال بعد أسبوع لتأكيد التسجيل ودفع السعر عبر البريد أو بريدي موب.</span></div>
+    <div class="divider"></div>
+    <p><b>ماذا سأتعلم؟</b> في عشرين ساعة ستبدأ في تعلم نطق الحروف، ثم ستتعلم أهم كلمات الحياة اليومية، إلى تكوين جمل بنفسك، التعريف بنفسك، التعبير عن مشاعرك، وصف الأشياء والأشخاص، كيفية طرح الأسئلة والإجابة عليها، قراءة نصوص بسيطة وفهمها إلى جانب النطق الصحيح للهجة المحلية. أخيرًا سأوجهكم إلى كيفية مواصلة التعلم بنفسكم، لأن تعلم لغة لا تكفيه بضع ساعات ❌ بل يجب المداومة والتطبيق ✅✨</p>
+    <div class="alert">❌ الدورتان ليست بتاتًا للناس الذين لهم مستوى في اللغتين.</div>
+  </section>
+    <section class="hero">
+      <h1>Formation Août – Anglais & Espagnol (De 0)</h1>
+      <p>✅ Online عبر Google Meet · ✅ المدة 20 ساعة · ✅ مجموعات محدودة العدد</p>
+    </section>
+
+    <main class="card" id="form">
+      <div class="card-inner">
+        <div class="toolbar">
+          <div class="pill" id="status" aria-live="polite">املأ الحقول المطلوبة (<span class="req-mark">*</span>) ثم أرسل</div>
+          <button type="button" class="btn btn-ghost" id="clearBtn">مسح الإجابات</button>
+        </div>
+
+        <form id="signup"
+      name="registration"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      novalidate>
+          <!-- NOTE: لتفعيل الإرسال إلى خادمك ضع action= endpoint و method=POST
+               مثال: action="https://usebasin.com/f/XXXXXXXX" method="POST" -->
+                 <input type="hidden" name="form-name" value="registration">
+
+ <!-- honeypot anti-spam (caché visuellement) -->
+  <div class="sr-only">
+    <label>Ne pas remplir : <input name="bot-field"></label>
+  </div>
+          <div class="grid two" role="group" aria-labelledby="sec-ident">
+            <h2 id="sec-ident" class="sr-only">معلومات الهوية</h2>
+
+            <div class="control">
+              <label for="fullName">ما هو اسمك الكامل <span class="req-mark">*</span></label>
+              <input id="fullName" name="fullName" type="text" required autocomplete="name" aria-describedby="fullNameHint">
+              <div id="fullNameHint" class="hint">Nom et prénom</div>
+              <div class="error" id="err-fullName" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="control">
+              <label for="instagram">Votre pseudo sur Instagram <span class="req-mark">*</span></label>
+              <input id="instagram" name="instagram" type="text" required inputmode="text" autocomplete="nickname" aria-describedby="instaHint">
+              <div id="instaHint" class="hint">اسمك على الانستغرام (حذار من الأخطاء)</div>
+              <div class="error" id="err-instagram" role="alert" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="grid two" role="group" aria-labelledby="sec-contact">
+            <h2 id="sec-contact" class="sr-only">معلومات التواصل</h2>
+
+            <div class="control">
+              <label for="email">Votre E‑mail <span class="req-mark">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@example.com">
+              <div class="error" id="err-email" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="control">
+              <label for="phone">رقم هاتفك</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="^[\d\s()+-]{7,}$" aria-describedby="phoneHint">
+              <div id="phoneHint" class="hint">مثال: 0555 55 55 55</div>
+              <div class="error" id="err-phone" role="alert" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <fieldset class="control" aria-describedby="courseHint">
+            <legend>انت مهتم بأي دورة؟ <span class="req-mark">*</span></legend>
+            <p id="courseHint" class="hint">Quelle est la formation qui vous intéresse?</p>
+            <div class="options">
+              <label class="option"><input type="radio" name="course" value="espagnol" required> <span>Espagnol de 0 (Débutant) – الاسبانية من الصفر</span></label>
+              <label class="option"><input type="radio" name="course" value="anglais" required> <span>Anglais de 0 (Débutant) – الانجليزية من الصفر</span></label>
+            </div>
+            <div class="error" id="err-course" role="alert" aria-live="polite"></div>
+          </fieldset>
+
+          <div class="control">
+            <label for="motivation">لماذا تريد أن تبدأ تعلم هذه اللغة؟ <span class="req-mark">*</span></label>
+            <div class="hint">Quelle est votre motivation ? (لا نقبل إجابات مولدة آليًا)</div>
+            <textarea id="motivation" name="motivation" required></textarea>
+            <div class="error" id="err-motivation" role="alert" aria-live="polite"></div>
+          </div>
+
+          <fieldset class="control">
+            <legend>ما هو مستواك في اللغة الفرنسية؟ <span class="req-mark">*</span></legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="frLevel" value="none" required> <span>لا أجيدها</span></label>
+              <label class="option"><input type="radio" name="frLevel" value="medium" required> <span>مستوى متوسط</span></label>
+              <label class="option"><input type="radio" name="frLevel" value="good" required> <span>مستوى جيد</span></label>
+            </div>
+            <div class="error" id="err-frLevel" role="alert" aria-live="polite"></div>
+          </fieldset>
+
+          <fieldset class="control">
+            <legend>هل أنت مستعد للدراسة أونلاين خلال شهر جويلية مساءً لمدة أسبوعين؟ <span class="req-mark">*</span></legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="readyJuly" value="yes" required> <span>نعم</span></label>
+            </div>
+            <div class="error" id="err-readyJuly" role="alert" aria-live="polite"></div>
+          </fieldset>
+
+          <fieldset class="control">
+            <legend>بعد الاختيار سيتم التواصل عبر الانستغرام/الإيميل وإرسال معلومات الدفع. <span class="req-mark">*</span></legend>
+            <label class="option"><input type="checkbox" name="accept" id="accept" required> <span>أقبل</span></label>
+            <div class="error" id="err-accept" role="alert" aria-live="polite"></div>
+          </fieldset>
+
+          <div class="actions">
+            <button class="btn btn-primary" type="submit">إرسال</button>
+            <button class="btn btn-ghost" type="reset">تفريغ الحقول</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">© 2023 جميع الحقوق محفوظة</footer>
+  </div>
+
+  <template id="successView">
+    <section class="hero" role="status" aria-live="polite">
+      <h1>✅ تم استلام طلبك بنجاح</h1>
+      <p>سنراجع المعلومات ونتواصل معك قريبًا عبر الانستغرام أو البريد الإلكتروني.</p>
+    </section>
+  </template>
+<script>
+/**
+ * Netlify Forms + Inline Success + Client Validation
+ * Paste this script before </body>.
+ * Required IDs/names in your HTML:
+ * - form#signup[name="registration"][data-netlify="true"]
+ * - hidden input: <input type="hidden" name="form-name" value="registration">
+ * - honeypot (optional): <input name="bot-field">
+ * - status pill: #status   | success template: #successView
+ * - clear button: #clearBtn (optional)
+ * - Field IDs: #fullName, #instagram, #email, #phone, #motivation
+ * - Radio groups: name="course", name="frLevel", name="readyJuly"
+ * - Checkbox: #accept
+ */
+(function () {
+  var form = document.getElementById('signup');
+  if (!form) return;
+
+  var status = document.getElementById('status') || { textContent: '' };
+  var successTpl = document.getElementById('successView');
+  var clearBtn = document.getElementById('clearBtn');
+  var submitting = false;
+
+  // ---------- Helpers ----------
+  function setFieldError(input, msg) {
+    if (!input) return;
+    var id = input.getAttribute('id') || input.getAttribute('name') || '';
+    var err = document.getElementById('err-' + id) ||
+              document.getElementById('err-' + (input.name || ''));
+    if (err) err.textContent = msg || '';
+    try { input.setAttribute('aria-invalid', msg ? 'true' : 'false'); } catch(e){}
+  }
+
+  function emailValid(v) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+  }
+
+  function requireRadio(groupName, errId) {
+    var nodes = form.querySelectorAll('input[name="' + groupName + '"]');
+    var any = false;
+    for (var i = 0; i < nodes.length; i++) { if (nodes[i].checked) { any = true; break; } }
+    var err = document.getElementById('err-' + errId);
+    if (!any && err) err.textContent = 'هذا الحقل مطلوب';
+    else if (err) err.textContent = '';
+    return any;
+  }
+
+  function encode(obj) {
+    var parts = [];
+    for (var k in obj) {
+      if (!Object.prototype.hasOwnProperty.call(obj, k)) continue;
+      parts.push(encodeURIComponent(k) + '=' + encodeURIComponent(obj[k]));
+    }
+    return parts.join('&');
+  }
+
+  function setSubmitting(on) {
+    submitting = !!on;
+    var btn = form.querySelector('button[type="submit"], input[type="submit"]');
+    if (btn) { btn.disabled = submitting; btn.style.opacity = submitting ? '.7' : ''; }
+  }
+
+  function showSuccess() {
+    var host = document.querySelector('main.card .card-inner') || document.querySelector('.card-inner') || form.parentNode;
+    if (successTpl && host) {
+      host.innerHTML = '';
+      host.appendChild(successTpl.content.cloneNode(true));
+    }
+    status.textContent = 'تم الإرسال بنجاح';
+  }
+
+  // ---------- Validation ----------
+  function validate() {
+    var ok = true;
+
+    var fullName = document.getElementById('fullName');
+    if (!fullName || !fullName.value.trim()) { setFieldError(fullName, 'الاسم الكامل مطلوب'); ok = false; }
+    else setFieldError(fullName, '');
+
+    var instagram = document.getElementById('instagram');
+    if (!instagram || !instagram.value.trim()) { setFieldError(instagram, 'اسم حساب الانستغرام مطلوب'); ok = false; }
+    else setFieldError(instagram, '');
+
+    var email = document.getElementById('email');
+    if (!email || !email.value.trim()) { setFieldError(email, 'البريد الإلكتروني مطلوب'); ok = false; }
+    else if (!emailValid(email.value)) { setFieldError(email, 'صيغة بريد غير صحيحة'); ok = false; }
+    else setFieldError(email, '');
+
+    var phone = document.getElementById('phone');
+    if (phone && phone.value) {
+      var re = new RegExp(phone.getAttribute('pattern') || '^[\\d\\s()+-]{7,}$');
+      if (!re.test(phone.value)) { setFieldError(phone, 'رقم هاتف غير صالح'); ok = false; }
+      else setFieldError(phone, '');
+    } else setFieldError(phone, '');
+
+    if (!requireRadio('course',   'course'))   ok = false;
+    if (!requireRadio('frLevel',  'frLevel'))  ok = false;
+    if (!requireRadio('readyJuly','readyJuly')) ok = false;
+
+    var motivation = document.getElementById('motivation');
+    if (!motivation || !motivation.value.trim()) { setFieldError(motivation, 'الرجاء كتابة سبب التحفيز'); ok = false; }
+    else setFieldError(motivation, '');
+
+    var accept = document.getElementById('accept');
+    var errAccept = document.getElementById('err-accept');
+    if (!accept || !accept.checked) { if (errAccept) errAccept.textContent = 'يجب الموافقة للمتابعة'; ok = false; }
+    else if (errAccept) errAccept.textContent = '';
+
+    return ok;
+  }
+
+  // ---------- Clear button ----------
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      try { form.reset(); } catch (e) {}
+      status.textContent = 'تم حذف الإجابات.';
+      var bad = form.querySelectorAll('[aria-invalid="true"]');
+      for (var i=0;i<bad.length;i++) bad[i].setAttribute('aria-invalid','false');
+      var errs = form.querySelectorAll('.error');
+      for (var j=0;j<errs.length;j++) errs[j].textContent='';
+    });
+  }
+
+  // ---------- Submit handler (Netlify Forms first-class) ----------
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (submitting) return;
+    status.textContent = 'جاري التحقق من البيانات…';
+    if (!validate()) { status.textContent = 'يرجى تصحيح الأخطاء الموضحة.'; return; }
+
+    setSubmitting(true);
+
+    // If you set form.action to a custom endpoint, we'll use that.
+    var ENDPOINT = form.getAttribute('action') || '';
+    var METHOD   = (form.getAttribute('method') || 'POST').toUpperCase();
+
+    // Collect fields
+    var fd = new FormData(form);
+
+    // Ensure Netlify sees the form name even if the hidden input was altered by the browser
+    var formName = form.getAttribute('name') || 'registration';
+    fd.set('form-name', formName);
+
+    // If using a custom endpoint (e.g., UseBasin), send raw FormData
+    if (ENDPOINT) {
+      fetch(ENDPOINT, { method: METHOD, body: fd })
+        .then(function (resp) {
+          if (!resp.ok) throw new Error('HTTP ' + resp.status);
+          showSuccess();
+        })
+        .catch(function () {
+          status.textContent = 'تعذر الإرسال. حاول لاحقًا أو تحقق من العنوان.';
+        })
+        .finally(function () { setSubmitting(false); });
+      return;
+    }
+
+    // Default: Netlify Forms — must be URL-encoded POST to "/"
+    var obj = {};
+    fd.forEach(function (v, k) { obj[k] = v; });
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode(obj)
+    })
+    .then(function (resp) {
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      showSuccess();
+    })
+    .catch(function () {
+      status.textContent = 'تعذر الإرسال. حاول لاحقًا أو تحقق من العنوان.';
+    })
+    .finally(function () { setSubmitting(false); });
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# If you add a build step later (Tailwind/Vite/etc.)
+node_modules/
+dist/
+build/
+
+# Netlify CLI local state (keep netlify.toml tracked)
+.netlify/
+
+# Secrets
+.env
+.env.*
